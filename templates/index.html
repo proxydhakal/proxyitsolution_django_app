@@ -1,0 +1,205 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proxy IT Solution</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link href="https://fonts.googleapis.com/css2?family=Amiri&family=Crimson+Text&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <section id="nav-bar">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="#"><img src="{% static 'images/logo2.png' %}"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <i class="fa fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item ">
+                  <a class="nav-link" href="#top">HOME <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#services">SERVICES</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#about-us">ABOUT US</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#testimonials">TESTIMONIALS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#social-media">CONTACT US</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+    </section>
+    <section id="banner">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <p class="promo-text">BEST DIGITAL AGENCY OF NEPAL</p>
+                    <p>Digital Marketing, SEO, Web Designing and Web Application Development that helps your business grow without compromise. Because “good for the business” should also mean “good for the customer.”</p>
+                    <a href="#"  data-toggle="modal" data-target="#exampleModalCenter"><img src="{% static 'images/play.png' %}" class="play-btn"> Watch Tutorials</a>
+                    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                            <div class="modal-body m-0 p-0">
+                                <iframe width="100%" height="350" src="https://www.youtube.com/embed/AT6oSIDbGkw?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-md-6 text-center">
+                    <img src="{% static 'images/home.png' %}" class="img-fluid p-4">
+                </div>
+            </div>
+        </div>
+        <img src="{% static 'images/Untitled-3.png' %}" class="img-wave">
+    </section>
+    <section id="services">
+        <div class="container text-center">
+            <h1 class="title">WHAT WE DO?</h1>
+            <div class="row text-center">
+                <div class="col-md-4 services">
+                    <img src="{% static 'images/web_design.png' %}" class="service-img">
+                    <h4>Web Designing</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt mollitia architecto nostrum natus ut sunt ipsum accusantium obcaecati voluptatem alias adipisci molestiae atque.</p>
+                </div>
+                <div class="col-md-4 services">
+                    <img src="{% static 'images/seo.png' %}" class="service-img">
+                    <h4>SEO</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt mollitia architecto nostrum natus ut sunt ipsum accusantium obcaecati voluptatem alias adipisci molestiae atque.</p>
+                </div>
+                <div class="col-md-4 services">
+                    <img src="{% static 'images/web_dev.png' %}" class="service-img">
+                    <h4>Web Development</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt mollitia architecto nostrum natus ut sunt ipsum accusantium obcaecati voluptatem alias adipisci molestiae atque.</p>
+                </div>
+            </div>
+            <button type="button" class="btn btn-primary">All Services</button>
+        </div>
+    </section>
+    <section id="about-us">
+        <div class="container">
+            <h1 class="title text-center">WHY CHOOSE US ?</h1>
+            <div class="row">
+                <div class="col-md-6 about-us">
+                    <p class="about-title">Why we'r different?</p>
+                    <ul>
+                        <li>Believe in doing bussiness with honesty.</li>
+                        <li>We deliver in time.</li>
+                        <li>We create a wining content strategy.</li>
+                        <li>We protect your online reputation.</li>
+                        <li>We create a wining content strategy.</li>
+                        <li>We create online reputation.</li>
+                        <li>Believe in doing bussiness with honesty.</li>
+                    </ul>
+                </div>
+                <div class="col-md-6 ">
+                    <img src="{% static 'images/about-us.png' %}" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="testimonials">
+        <div class="container">
+            <h1 class="title text-center">WHAT CLIENT SAY</h1> 
+            <div class="row offset-2">
+                <div class=" col-md-5 testimonials">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus veniam nesciunt, eligendi, laudantium omnis, ab reiciendis ducimus expedita eum quae fugit sint.</p>
+                    <img src="{% static 'images/user-297566_640.png' %}" class="w-25">
+                    <p class="user-details"><b>Agelina</b><br>Co-founder at ABC</p>
+
+                </div>
+                <div class=" col-md-5 testimonials">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus veniam nesciunt, eligendi, laudantium omnis, ab reiciendis ducimus expedita eum quae fugit sint.</p>
+                    <img src="{% static 'images/avatar-3637425_640.png' %}" class="w-25">
+                    <p class="user-details"><b>John Doe</b><br>Director at ABC</p>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="clearfix"></div>
+    <section id="social-media">
+        <div class="container text-center">
+            <h1 class="title"> CONTACT US</h1>
+            <p class="text-muted">Please feel free to make as an Query!</p>
+            <hr>
+            <div class="row">
+                <div class="col-md-6 mt-3">
+                    <form method="POST" action="#" class="shadow p-3">
+                        <input type="text" name="name" placeholder="Full Name" class="form-control">
+                        <input type="email" name="email" placeholder="Your Email" class="form-control">
+                        <input type="text" name="subject" placeholder="Subject" class="form-control">
+                        <textarea rows="4" name="message" placeholder="Your Message" class="form-control"></textarea>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+                <div class="col-md-6 mt-3">
+                    <div class="card">
+                        <iframe class="card-img-top" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3531.2029807369627!2d85.30123121537191!3d27.74188463057961!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb18d02714ee79%3A0x7e573c5124725e8a!2sN.R.%20College!5e0!3m2!1sen!2snp!4v1590230176864!5m2!1sen!2snp" width="100%" height="420" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                    </div>
+                </div>
+            </div>
+            <p> FIND US ON SOCIAL MEDIA</p>
+            <div class="social-icons">
+                <a href="#"><img src="{% static 'images/facebook.png' %}" alt="facebook"></a>
+                <a href="#"><img src="{% static 'images/instagram.png' %}" alt="instagram"></a>
+                <a href="#"><img src="{% static 'images/snapchat.png' %}" alt="snapchat"></a>
+                <a href="#"><img src="{% static 'images/twitter.png' %}" alt="twitter"></a>
+                <a href="#"><img src="{% static 'images/whatsapp.png' %}" alt="whatsapp"></a>
+                <a href="#"><img src="{% static 'images/linkined.png' %}" alt="linkined"></a>
+            </div>
+        </div>
+        
+    </section>
+    <section id="footer">
+        <!-- <img  class="img-fluid" src="{% static 'images/architecture-1298981.png' %}" alt="wave1"> -->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 footer-box">
+                    <img src="{% static 'images/logo2.png' %}">
+                    <p>We’ve been growing businesses since 2019, let us do it for you!
+                        Stay tuned with us on social networks!</p>
+                </div>
+                <div class="col-md-4 footer-box">
+                    <p><b>CONTACT US</b></p>
+                    <p><i class="fa fa-map-marker"></i> World Trade Center, Kathmandu Nepal</p>
+                    <p><i class="fa fa-phone"></i> +977 9840177381</p>
+                    <p><i class="fa fa-envelope"></i> abc@gmail.com</p>
+                </div>
+                <div class="col-md-4 footer-box">
+                    <p><b>SUBSCRIBE NEWSLETTER</b></p>
+                    <form>
+                    <input type="email" class="form-control" placeholder="Your Email" required>
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">&copy; 2020 Proxy IT Solution | Design and Developed by Shekhar Dhakal</p>
+        </div>
+    </section>
+    <script src="{% static 'js/smooth-scroll.js' %}"></script>
+    <script>
+        var scroll = new SmoothScroll('a[href*="#"]');
+    </script>
+</body>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</html>
